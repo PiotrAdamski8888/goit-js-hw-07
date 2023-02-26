@@ -20,4 +20,25 @@ const markup = galleryItems
   .join("");
   
 list.insertAdjacentHTML("afterbegin", markup);
-var lightbox = new SimpleLightbox('.gallery a', { /* options */ });
+let lightbox = new SimpleLightbox('.gallery a', {
+    captionsData : "alt",
+    captionDelay : 250, 
+   // enableKeyboard : true,
+  
+
+});
+
+//=============================================================
+
+//<a class="gallery__item" href="large-image.jpg">
+ // <img class="gallery__image" src="small-image.jpg" alt="Image description" />
+//</a>
+
+//=============================================================
+
+//var lightbox = new SimpleLightbox('.gallery a', { /* options */ });
+
+//=============================================================
+
+//captionsData / title /string / get the caption from given attribute
+//captionDelay / 0 / int / adds a delay before the caption shows (in ms)
